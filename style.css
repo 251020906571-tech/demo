@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.skip-link {
+    position: absolute;
+    top: -100px; 
+    left: 10px;
+    background: #0056b3;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    z-index: 100;
+    transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+    top: 10px; 
+    outline: 2px solid #ffcc00;
+}
+
+.main-nav {
+    background-color: #1a1a2e;
+    padding: 15px;
+}
+
+.nav-list {
+    display: flex;             
+    justify-content: center; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;         
+}
+
+.nav-list a {
+    color: #e2e2e2;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-list a:hover {
+    background-color: #e94560;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.nav-list a.active {
+    background-color: #0f3460;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.styled-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    
+    /* Box Model chi tiết */
+    border: 5px solid #1a1a2e;  
+    padding: 10px;             
+    border-radius: 12px;         
+    background-color: #ffffff; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat()
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-grid .grid-item:nth-child(odd) .styled-image {
+    border-radius: 30px 5px 30px 5px;
+    border-color: #e94560;
+}(Border Radius) */
+
+main {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a2e;
+    color: #888;
+    margin-top: 40px;
+}
